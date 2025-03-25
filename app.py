@@ -1,9 +1,11 @@
+import json
+
 class student:
-    def __init__(self, name, classes):
+    def __init__(self, name, classes, assignments):
         self.name = name
         self.classes = classes
-    def work(self, homework):
-        self.classes.remove(homework)
-        print(self.classes)
-ethan = student("Ethan", ['APWH Seminar', 'Trig Exam', 'Peterson Exam', 'Chemistry Quiz'])
-ethan.work('Peterson Exam')
+        self.assignments = assignments
+
+    def display_info(self):
+        return{"name": self.name, "classes": self.classes, "assignments": self.assignments}
+student = student("Ethan", "Chemistry", "Seminar")
