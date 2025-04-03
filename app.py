@@ -13,3 +13,4 @@ class Student:
 
 my_student = Student("Ethan", "SITHS", 2028)
 print(my_student.display_info())
+
