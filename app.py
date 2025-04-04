@@ -10,7 +10,4 @@ class Student:
 
     def to_dict(self):
         return {"name": self.name, "classes": self.classes, "homework": self.homework}
-
-my_student = Student("Ethan", "SITHS", 2028)
-print(my_student.display_info())
-
+students_data = [student.to_dict() for student in Student]
