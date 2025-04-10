@@ -11,8 +11,10 @@ class teach:
         print(self.aa)
 
     def save(self):
-        with open("FlashCards.json", "w") as file:
-            json.dump(self.aa, file, indent=4)
+        saver = input("do you wanna save?")
+        if saver.lower() == "yes":
+            with open("FlashCards.json", "w") as file:
+                json.dump(self.aa, file, indent=4)
 
 w = teach()
 w.makekey()
