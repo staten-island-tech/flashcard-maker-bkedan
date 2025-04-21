@@ -19,6 +19,15 @@ w.makekey()
 w.save()
 
 class student:
-    def __init__(self. bonus, streak):
+    def __init__(self, bonus, streak):
         self.bonus = bonus
         self.streak = streak
+    
+    def display_info(self):
+        return f"student: {self.bonus}, streak: {self.streak}"
+    
+    def to_dict(self):
+        return {"bonus": self.bonus, "streak": self.streak}
+   
+
+
