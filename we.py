@@ -19,9 +19,11 @@ w.makekey()
 w.save()
 
 class student:
-    def __init__(self, bonus, streak):
-        self.bonus = bonus
+    def __init__(self, point, streak):
+        self.point = point
         self.streak = streak
+        point = 0
+        streak = 0 
     
     def display_info(self):
         return f"student: {self.bonus}, streak: {self.streak}"
