@@ -33,7 +33,9 @@ class student:
                 streak += 1
                 print(streak)
             else: 
-                print("no")
+                print("you're wrong!")
    
+s = student(w)
+s.start()
 
 
